@@ -1,0 +1,94 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détection de Fraude Bancaire</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <section id="project-detail">
+        <h1>Détection de Fraude Bancaire</h1>
+        <div class="project-intro">
+            <p>
+                Ce projet utilise des modèles de classification pour détecter les transactions frauduleuses. 
+                Il repose sur des techniques avancées comme XGBoost et la gestion des classes déséquilibrées (SMOTE).
+            </p>
+        </div>
+
+        <!-- Image de présentation -->
+        <div class="project-image">
+            <img src="{% static 'Images/detection_fraude.jpeg' %}" alt="Détection de Fraude Bancaire">
+        </div>
+
+        <!-- Détails techniques -->
+        <section class="project-details">
+            <h2>Détails Techniques</h2>
+            <ul>
+                <li><strong>Modèle utilisé :</strong> XGBoost</li>
+                <li><strong>Méthodes de prétraitement :</strong> Normalisation, gestion des classes déséquilibrées (SMOTE).</li>
+                <li><strong>Environnement :</strong> Python, Scikit-learn, Pandas, Matplotlib.</li>
+                <li><strong>Résultats :</strong> Précision, rappel et courbe ROC montrant une excellente performance sur les données test.</li>
+            </ul>
+        </section>
+
+        <!-- Visualisation -->
+        <section class="project-visuals">
+            <h2>Visualisation des Résultats</h2>
+            <div class="visualization">
+                <img src="{% static 'Images/detection_fraude.jpeg' %}" alt="Résultats de la classification">
+            </div>
+        </section>
+
+        <!-- Télécharger ou voir le code -->
+        <section class="project-links">
+            <h2>Accès aux fichiers</h2>
+            <p>
+                Vous pouvez consulter le code complet du projet via les liens suivants :
+            </p>
+            <ul>
+                <li>
+                    <a href="{% static 'documents/detection_fraude.ipynb' %}" target="_blank">Fichier Notebook (.ipynb)</a>
+                </li>
+                <li>
+                    <a href="{% static 'documents/detection_fraude_streamlit.py' %}" target="_blank">Code Streamlit pour le déploiement</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <!-- Ajoute des détails, des visualisations, et des explications du projet -->
+    <footer>
+        <div class="footer-container">
+            <!-- Section Politique de Confidentialité et Mentions Légales -->
+            <div class="footer-links">
+                <a href="#privacy-policy">Politique de Confidentialité</a>
+                <a href="#terms-conditions">Conditions Générales d'Utilisation</a>
+                <a href="#legal-mentions">Mentions Légales</a>
+            </div>
+    
+            <!-- Section Droits d'Auteur -->
+            <div class="copyright">
+                <p>&copy; 2024 DataTI. Tous droits réservés.</p>
+            </div>
+    
+            <!-- Section Réseaux Sociaux -->
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+    
+            <!-- Section Informations de Contact 
+            <div class="contact-info">
+                <p>Email : <a href="mailto:tebattoulrich@gmail.com">tebattoulrich@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+33695078241">+33 6 95 07 82 41</a></p>
+            </div>-->
+        </div>
+    </footer>
+    
+</body>
+</html>

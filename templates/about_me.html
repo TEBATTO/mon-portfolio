@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de moi</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section id="about-me">
+        <div class="about-container">
+            <div class="profile">
+                <img src="{% static 'Images/Photo.JPG' %}" alt="Photo de profil" class="profile-pic">
+            </div>
+            <div class="info">
+                <h1>À propos de moi</h1>
+                <p>
+                    Je m'appelle <strong>Tebatto</strong>, un passionné de data science et de technologies innovantes. 
+                    Mon parcours académique et mes expériences professionnelles m'ont permis de développer des 
+                    compétences en <strong>analyse de données</strong>, <strong>machine learning</strong> et <strong>visualisation de données</strong>.
+                </p>
+                <p>
+                    Je suis motivé par les défis qui combinent technologie et créativité, en mettant l'accent sur la 
+                    résolution de problèmes complexes à travers des solutions data-driven.
+                </p>
+                <p>
+                    En dehors de la programmation, j'aime partager mes connaissances, lire des livres sur l'intelligence artificielle et explorer de nouvelles technologies.
+                </p>
+                <div class="contact-details">
+                    <h3>Me contacter</h3>
+                    <p><i class="fas fa-envelope"></i> tebattoulrich@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +33 6 95 07 82 41</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Marseille, France</p>
+                </div>
+                <div class="social-links">
+                    <h3>Suivez-moi</h3>
+                    <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Section Politique de Confidentialité et Mentions Légales -->
+            <div class="footer-links">
+                <a href="#privacy-policy">Politique de Confidentialité</a>
+                <a href="#terms-conditions">Conditions Générales d'Utilisation</a>
+                <a href="#legal-mentions">Mentions Légales</a>
+            </div>
+    
+            <!-- Section Droits d'Auteur -->
+            <div class="copyright">
+                <p>&copy; 2024 DataTI. Tous droits réservés.</p>
+            </div>
+    
+            <!-- Section Réseaux Sociaux -->
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+    
+            <!-- Section Informations de Contact 
+            <div class="contact-info">
+                <p>Email : <a href="mailto:tebattoulrich@gmail.com">tebattoulrich@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+33695078241">+33 6 95 07 82 41</a></p>
+            </div>-->
+        </div>
+    </footer>
+</body>
+</html>
+

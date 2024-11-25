@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Plateforme Data Science{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- Navigation commune -->
+    <nav>
+        <a href="{% url 'home' %}">Accueil</a>
+        <a href="{% url 'interests' %}">Mes centres d'intérêts</a>
+        <a href="{% url 'about_me' %}">À propos de moi</a>
+        <a href="{% url 'mes_projects' %}">Projets Personnels</a>
+    </nav>
+
+    <!-- Contenu spécifique -->
+    <main>
+        {% block content %}
+        <!-- Le contenu des pages spécifiques sera inséré ici -->
+        {% endblock %}
+    </main>
+
+    <!-- Boutons Retour et Accueil -->
+    <footer>
+        <div class="navigation-buttons">
+            <button onclick="history.back()" class="btn-back">← Retour</button>
+            <a href="{% url 'home' %}" class="btn-home">Accueil</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
+

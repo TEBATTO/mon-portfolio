@@ -1,0 +1,89 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section id="skills">
+        <h1>Mes Compétences</h1>
+        <div class="skills-container">
+            <!-- Compétence 1 -->
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h2>Analyse de Données</h2>
+                <p>Exploration, nettoyage et modélisation de données complexes avec Python et R.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <!-- Compétence 2 -->
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h2>Programmation</h2>
+                <p>Maîtrise de Python, R, SQL et déploiement d'applications web avec Django et Flask.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <!-- Compétence 3 -->
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h2>Machine Learning</h2>
+                <p>Création et optimisation de modèles prédictifs et de classification avec Scikit-Learn, TensorFlow, et PyTorch.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <!-- Compétence 4 -->
+            <div class="skill-card">
+                <i class="fas fa-project-diagram"></i>
+                <h2>Gestion de Projets</h2>
+                <p>Planification, suivi et réalisation de projets data-driven avec Git et Agile.</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Section Politique de Confidentialité et Mentions Légales -->
+            <div class="footer-links">
+                <a href="#privacy-policy">Politique de Confidentialité</a>
+                <a href="#terms-conditions">Conditions Générales d'Utilisation</a>
+                <a href="#legal-mentions">Mentions Légales</a>
+            </div>
+    
+            <!-- Section Droits d'Auteur -->
+            <div class="copyright">
+                <p>&copy; 2024 DataTI. Tous droits réservés.</p>
+            </div>
+    
+            <!-- Section Réseaux Sociaux -->
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+    
+            <!-- Section Informations de Contact 
+            <div class="contact-info">
+                <p>Email : <a href="mailto:tebattoulrich@gmail.com">tebattoulrich@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+33695078241">+33 6 95 07 82 41</a></p>
+            </div>-->
+        </div>
+    </footer>
+    
+</body>
+</html>

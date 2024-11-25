@@ -1,0 +1,98 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme de Data Science</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <a href="#accueil"><img src="{% static 'Images/logo.png' %}" alt="Logo" class="logo"></a>
+        <a href="#accueil">Accueil</a>
+        <a href="{% url 'interests' %}">Mes centres d'intérêts</a>
+        <a href="{% url 'skills' %}">Compétences</a>
+        <a href="{% url 'about_me' %}">À propos de moi</a>
+        <a href="{% url 'mes_projects' %}">Projets Personnels</a>
+    </nav>
+    
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <h1>Bienvenue sur DataTI, chez TEBATTO</h1>
+        <p>Vous trouverez ici mes centres d'interêts et mes projets</p>
+    </section>
+
+    <!-- Section Actualités -->
+    <section id="Actualités">
+        <h2>ACTUALITES</h2>
+        <p>Dans cette section vous trouverez toute notre actualité sous forme de vidéos, de fichiers PDF ou de blogs.</p>
+    </section>
+
+    <!-- Section AGENDA -->
+    <section id="Agenda">
+        <h2>AGENDA</h2>
+        <p>Participez aux concours pour évaluer vos compétences et développer votre intérêt pour la data science.</p>
+    </section>
+
+    <!-- Section Contacts -->
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <p>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:tebattoulrich@gmail.com">tebattoulrich@gmail.com</a>
+        </p>
+        <p>
+            <i class="fa fa-phone"></i>
+            <a href="tel:+1234567890">+33 6 95 07 82 41</a>
+        </p>
+    </section>
+
+    <!-- Section À propos 
+<section id="a_propos">
+    <h2>À propos de DataTI</h2>
+    <p>DataTI est une plateforme dédiée à l'apprentissage de la data science et des technologies avancées d'analyse de données. Notre objectif est d'aider les passionnés et les professionnels à acquérir des compétences clés pour relever les défis technologiques de demain.</p>
+    <ul>
+        <li>Apprenez avec des cours interactifs.</li>
+        <li>Participez à des compétitions stimulantes.</li>
+        <li>Travaillez sur des projets concrets pour enrichir votre portfolio.</li>
+    </ul>
+</section>-->
+
+<footer>
+    <div class="footer-container">
+        <!-- Section Politique de Confidentialité et Mentions Légales -->
+        <div class="footer-links">
+            <a href="#privacy-policy">Politique de Confidentialité</a>
+            <a href="#terms-conditions">Conditions Générales d'Utilisation</a>
+            <a href="#legal-mentions">Mentions Légales</a>
+        </div>
+
+        <!-- Section Droits d'Auteur -->
+        <div class="copyright">
+            <p>&copy; 2024 DataTI. Tous droits réservés.</p>
+        </div>
+
+        <!-- Section Réseaux Sociaux -->
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!-- Section Informations de Contact 
+        <div class="contact-info">
+            <p>Email : <a href="mailto:tebattoulrich@gmail.com">tebattoulrich@gmail.com</a></p>
+            <p>Téléphone : <a href="tel:+33695078241">+33 6 95 07 82 41</a></p>
+        </div> -->
+    </div>
+</footer>
+
+</body>
+</html>

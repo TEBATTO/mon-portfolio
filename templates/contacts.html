@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets Personnels</title>
+    <style>
+        /* Style optionnel pour la liste */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mes Contacts</h1>
+    <ul>
+        <li><a href="{% url 'project_fraud_detection' %}">Détection de Fraude Bancaire</a></li>
+        <li><a href="{% url 'project_turbulence' %}">Turbulence</a></li>
+        <li><a href="{% url 'project_ghana' %}">Analyse des Ménages au Ghana</a></li>
+        <li><a href="{% url 'project_ab_testing' %}">A/B Testing</a></li>
+        <li><a href="{% url 'project_regression' %}">Régression</a></li>
+        <li><a href="{% url 'project_time_series' %}">Analyse des Séries Temporelles</a></li>
+        <li><a href="{% url 'project_deep_learning' %}">Deep Learning - Classification</a></li>
+        <li><a href="{% url 'project_generative_ai' %}">IA Générative</a></li>
+        <li><a href="{% url 'project_gpt_llama' %}">Utilisation des API GPT et LLaMA</a></li>
+        <li><a href="{% url 'project_recommendation_systems' %}">Systèmes de Recommandation</a></li>
+    </ul>
+    <footer>
+        <div class="footer-container">
+            <!-- Section Politique de Confidentialité et Mentions Légales -->
+            <div class="footer-links">
+                <a href="#privacy-policy">Politique de Confidentialité</a>
+                <a href="#terms-conditions">Conditions Générales d'Utilisation</a>
+                <a href="#legal-mentions">Mentions Légales</a>
+            </div>
+    
+            <!-- Section Droits d'Auteur -->
+            <div class="copyright">
+                <p>&copy; 2024 DataTI. Tous droits réservés.</p>
+            </div>
+    
+            <!-- Section Réseaux Sociaux -->
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+    
+            <!-- Section Informations de Contact -->
+            <div class="contact-info">
+                <p>Email : <a href="mailto:tebattoulrich@gmail.com">tebattoulrich@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+33695078241">+33 6 95 07 82 41</a></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

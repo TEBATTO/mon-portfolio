@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/B Testing</title>
+    <link rel="stylesheet" href="{% static 'css/style_ab_testing.css' %}">
+</head>
+<body>
+    <section id="project-ab-testing">
+        <h1>A/B Testing</h1>
+        <p>Optimisation des conversions grâce à des expériences A/B sur des données réelles.</p>
+
+        <!-- Résumé -->
+        <div class="summary">
+            <p>
+                Ce projet évalue l'impact des différentes variantes de design sur le comportement des utilisateurs. 
+                Une analyse statistique est réalisée pour déterminer la variante gagnante.
+            </p>
+        </div>
+
+        <!-- Diagramme -->
+        <div class="diagram">
+            <img src="{% static 'Images/ab_testing_diagram.png' %}" alt="Diagramme A/B Testing">
+        </div>
+
+        <!-- Fichier -->
+        <div class="files">
+            <a href="{% static 'documents/ab_testing_report.pdf' %}" class="btn">Télécharger le rapport</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Section Politique de Confidentialité et Mentions Légales -->
+            <div class="footer-links">
+                <a href="#privacy-policy">Politique de Confidentialité</a>
+                <a href="#terms-conditions">Conditions Générales d'Utilisation</a>
+                <a href="#legal-mentions">Mentions Légales</a>
+            </div>
+    
+            <!-- Section Droits d'Auteur -->
+            <div class="copyright">
+                <p>&copy; 2024 DataTI. Tous droits réservés.</p>
+            </div>
+    
+            <!-- Section Réseaux Sociaux -->
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+    
+            <!-- Section Informations de Contact -->
+            <div class="contact-info">
+                <p>Email : <a href="mailto:tebattoulrich@gmail.com">tebattoulrich@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+33695078241">+33 6 95 07 82 41</a></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

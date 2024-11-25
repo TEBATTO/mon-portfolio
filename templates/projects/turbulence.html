@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbulence</title>
+    <link rel="stylesheet" href="{% static 'css/style_turbulence.css' %}">
+</head>
+<body>
+    <section id="project-detail">
+        <h1>Turbulence</h1>
+        <p>Analyse approfondie des données de turbulence pour améliorer la sécurité des vols aériens.</p>
+
+        <!-- Image centrale -->
+        <div class="main-image">
+            <img src="{% static 'Images/nif_turbulence.png' %}" alt="Données de turbulence">
+        </div>
+
+        <!-- Sections en colonnes -->
+        <div class="columns">
+            <div class="column">
+                <h2>Méthodologie</h2>
+                <p>Application de l’analyse exploratoire des données pour identifier les corrélations entre les variables.</p>
+            </div>
+            <div class="column">
+                <h2>Technologies</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Liens -->
+        <section class="project-links">
+            <a href="{% static 'documents/turbulence_analysis.ipynb' %}" class="btn">Télécharger le Notebook</a>
+        </section>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Section Politique de Confidentialité et Mentions Légales -->
+            <div class="footer-links">
+                <a href="#privacy-policy">Politique de Confidentialité</a>
+                <a href="#terms-conditions">Conditions Générales d'Utilisation</a>
+                <a href="#legal-mentions">Mentions Légales</a>
+            </div>
+    
+            <!-- Section Droits d'Auteur -->
+            <div class="copyright">
+                <p>&copy; 2024 DataTI. Tous droits réservés.</p>
+            </div>
+    
+            <!-- Section Réseaux Sociaux -->
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+    
+            <!-- Section Informations de Contact 
+            <div class="contact-info">
+                <p>Email : <a href="mailto:tebattoulrich@gmail.com">tebattoulrich@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+33695078241">+33 6 95 07 82 41</a></p>
+            </div>-->
+        </div>
+    </footer>
+    
+</body>
+</html>
